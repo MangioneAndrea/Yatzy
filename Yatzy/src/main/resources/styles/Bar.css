@@ -1,0 +1,17 @@
+.bar{
+    -fx-background-color:#000000;
+}
+.buttons{
+    -fx-background-color: #666666;
+}
+#reduce:hover{
+    -fx-background-color: #FFFFFF;
+}
+#fullscreen:hover{
+    -fx-background-color: #FFFFFF;
+    
+}
+#close:hover{
+    -fx-background-color: #FFFFFF;
+    
+}

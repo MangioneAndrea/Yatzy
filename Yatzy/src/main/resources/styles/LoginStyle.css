@@ -1,0 +1,11 @@
+.loginBackground{
+    -fx-background-color: #000000;
+}
+.contrastBackground{
+    -fx-background-color: #D0080B;
+    -fx-background-radius: 10px;
+}
+.buttonBackground{
+    -fx-background-color:#DAA520;
+    -fx-background-radius: 25px;
+}

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" onMouseMoved="#moveMouse" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.yatzy.controller.GameController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../images/yatzy/background.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="20.0" layoutY="11.0" prefHeight="680.0" prefWidth="1242.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="150.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="950.4000122070312" minWidth="10.0" prefWidth="890.6666137695312" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="0.0" prefWidth="150.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane fx:id="dealerTable" prefHeight="680.0" prefWidth="320.0" styleClass="yatzyTable" stylesheets="@../../styles/Styles.css" GridPane.columnIndex="2">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.2666015625" minWidth="10.0" prefWidth="114.8000732421875" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.26668701171874" minWidth="10.0" prefWidth="34.7999267578125" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Bank" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Ones" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Twos" GridPane.rowIndex="2" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Threes" GridPane.rowIndex="3" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Sixes" GridPane.rowIndex="6" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Fives" GridPane.rowIndex="5" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Fours" GridPane.rowIndex="4" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Total" GridPane.rowIndex="15" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="One Pair" GridPane.rowIndex="7" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Full House" GridPane.rowIndex="12" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Chance" GridPane.rowIndex="13" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Large Straight" GridPane.rowIndex="11" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Three of a Kind" GridPane.rowIndex="8" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Small Straight" GridPane.rowIndex="10" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Four of a Kind" GridPane.rowIndex="9" />
+                  <Label id="ones" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label id="twos" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label id="threes" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label id="fours" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label id="fives" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label id="sixes" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label id="one_pair" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Label id="three_of_a_kind" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label id="small_straight" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <Label id="large_straight" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                  <Label id="full_house" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                  <Label id="chance" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                  <Label id="total" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                  <Label id="four_of_a_kind" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <Label alignment="CENTER" prefHeight="113.0" prefWidth="202.0" text="Yatzy" GridPane.rowIndex="14" />
+                  <Label id="yatzy" alignment="CENTER" prefHeight="79.0" prefWidth="89.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="playerTable" prefHeight="582.0" prefWidth="168.0" styleClass="yatzyTable" stylesheets="@../../styles/Styles.css">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="0.0" prefWidth="151.46666870117187" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="209.6" minWidth="0.0" prefWidth="58.133331298828125" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Spieler" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Ones" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Twos" GridPane.rowIndex="2" />
+                  <Label id="ones" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label id="twos" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Threes" GridPane.rowIndex="3" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Sixes" GridPane.rowIndex="6" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Fives" GridPane.rowIndex="5" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Fours" GridPane.rowIndex="4" />
+                  <Label id="threes" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label id="fours" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label id="fives" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label id="sixes" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Total" GridPane.rowIndex="15" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="One Pair" GridPane.rowIndex="7" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Full House" GridPane.rowIndex="12" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Chance" GridPane.rowIndex="13" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Large Straight" GridPane.rowIndex="11" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Three of a Kind" GridPane.rowIndex="8" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Small Straight" GridPane.rowIndex="10" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Four of a Kind" GridPane.rowIndex="9" />
+                  <Label id="one_pair" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Label id="three_of_a_kind" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label id="small_straight" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <Label id="four_of_a_kind" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <Label id="large_straight" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                  <Label id="full_house" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                  <Label id="chance" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                  <Label id="total" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                  <Label alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="Yazty" GridPane.rowIndex="14" />
+                  <Label id="yatzy" alignment="CENTER" prefHeight="200.0" prefWidth="400.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+               </children>
+            </GridPane>
+            <GridPane prefHeight="680.0" prefWidth="726.0" GridPane.columnIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="452.79998779296875" minHeight="10.0" prefHeight="432.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="278.4000061035156" minHeight="10.0" prefHeight="224.79999999999995" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane fx:id="table_b" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" onMouseClicked="#dice" prefHeight="337.0" prefWidth="240.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.8000015258789" minWidth="10.0" prefWidth="134.8000015258789" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="700.0" minWidth="689.5999984741211" prefWidth="700.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="0.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="95.19999694824219" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="271.20001220703125" minHeight="10.0" prefHeight="251.20001220703125" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="131.19998168945312" minHeight="10.0" prefHeight="112.79998779296875" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane fx:id="table" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                        <GridPane fx:id="lockedTable" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <AnchorPane fx:id="outputPane" prefHeight="237.0" prefWidth="212.0" GridPane.rowIndex="1">
+                     <children>
+                        <ImageView fitHeight="216.0" fitWidth="214.0" layoutX="366.0" layoutY="10.0" onMouseClicked="#reroll" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="366.0">
+                           <image>
+                              <Image url="@../../images/yatzy/button_dice.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="92.0" fitWidth="100.0" layoutX="47.0" layoutY="106.0" onMouseClicked="#surrend" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/yatzy/surrend.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="78.0" fitWidth="79.0" layoutX="789.0" layoutY="118.0" onMouseClicked="#info" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="71.39999999999998">
+                           <image>
+                              <Image url="@../../images/yatzy/help.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+      <Label fx:id="mouse" prefHeight="122.0" prefWidth="133.0" />
+   </children>
+</AnchorPane>

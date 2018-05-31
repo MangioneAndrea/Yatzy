@@ -1,0 +1,12 @@
+.button {
+    -fx-font-weight: bold;
+}
+.yatzyTable{
+    -fx-background-color: #efefef;
+    -fx-opacity: 0.5;
+    -fx-background-radius:25px;
+}
+.yatzyTable:hover{
+    -fx-opacity: default;
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,15 @@
+ch\bbbaden\yatzy\model\hitter\Hitter.class
+ch\bbbaden\yatzy\model\hitter\Player$1.class
+ch\bbbaden\yatzy\yatzy\MainApp.class
+ch\bbbaden\yatzy\controller\InfoController.class
+ch\bbbaden\yatzy\model\hitter\Computer$1.class
+ch\bbbaden\yatzy\model\StateManager.class
+ch\bbbaden\yatzy\model\Game.class
+ch\bbbaden\yatzy\controller\GameController.class
+ch\bbbaden\yatzy\model\GameThread.class
+ch\bbbaden\yatzy\yatzy\FXMLController.class
+ch\bbbaden\yatzy\model\hitter\Player.class
+ch\bbbaden\yatzy\model\Dice.class
+ch\bbbaden\yatzy\model\hitter\Computer.class
+ch\bbbaden\yatzy\model\Points.class
+ch\bbbaden\yatzy\model\hitter\Computer$2.class

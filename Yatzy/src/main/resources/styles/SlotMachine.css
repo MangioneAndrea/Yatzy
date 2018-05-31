@@ -1,0 +1,17 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24.04.2018, 11:50:01
+    Author     : clbo2
+*/
+
+.anchorpane{
+    -fx-background-images: url("");
+}
+
+.main{
+    -fx-background-image: url("/images/slot_machine/background2.jpg");
+}
